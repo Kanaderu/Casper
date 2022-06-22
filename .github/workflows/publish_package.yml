@@ -53,3 +53,10 @@ jobs:
 #           recursive_exclusions: # optional, default is 
 #           # Tool to use for archiving
 #           type: # optional, default is zip
+
+      # Upload Build Artifact
+      - name: Upload a Build Artifact 🎨
+        uses: actions/upload-artifact@v3.1.0
+        with:
+          name: casper
+          path: dist/casper.zip
